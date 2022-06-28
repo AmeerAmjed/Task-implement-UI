@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity"
+    >
+
+    <!--root row-->
+    <LinearLayout
+        style="@style/cardStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <!--Avatar user-->
+        <com.google.android.material.imageview.ShapeableImageView
+            app:srcCompat="@drawable/avaters"
+            android:layout_width="@dimen/sizeAvatat"
+            android:layout_height="@dimen/sizeAvatat"
+            android:layout_margin="@dimen/spacingMedium"
+            app:shapeAppearanceOverlay="@style/roundedCornersImageView"
+            />
+
+        <!--Column one-->
+        <LinearLayout
+            android:gravity="start"
+            android:orientation="vertical"
+            android:layout_marginVertical="@dimen/spacingMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <!--name user-->
+            <TextView
+                android:text="@string/nameUser"
+                style="@style/nameUserStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <!--career user-->
+            <TextView
+                android:text="@string/career"
+                style="@style/secTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <!--Row icon Location & Location-->
+            <LinearLayout
+                android:gravity="start"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <!--icon location-->
+                <ImageView
+                    android:tint="@color/red_500"
+                    android:src="@drawable/ic_baseline_location_on_24"
+                    android:layout_width="@dimen/sizeWidthLocationIcon"
+                    android:layout_height="match_parent"
+                    />
+
+                <!--location-->
+                <TextView
+                    android:text="@string/location"
+                    style="@style/FourTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+            <!--row rating and star-->
+            <LinearLayout
+                android:gravity="start"
+                android:layout_marginTop="@dimen/spacingSmall"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <!--reviews-->
+                <TextView
+                    android:text="@string/reviews"
+                    style="@style/defualtTextStyle"
+                    android:layout_marginEnd="@dimen/spacing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <!--rating-->
+                <TextView
+                    android:text="@string/rating"
+                    style="@style/defualtTextStylebold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <!--icon star-->
+                <ImageView
+                    android:tint="@color/yellow_600"
+                    android:src="@drawable/ic_baseline_star_24"
+                    android:gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--column two-->
+        <LinearLayout
+            android:gravity="end"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/spacingMedium"
+            android:layout_marginEnd="@dimen/spacingSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <!--hours-->
+            <TextView
+                android:text="@string/hours"
+                style="@style/hoursStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <!--country-->
+            <TextView
+                android:text="@string/country"
+                style="@style/secTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <!--days-->
+            <TextView
+                android:text="@string/days_ago"
+                style="@style/thriTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

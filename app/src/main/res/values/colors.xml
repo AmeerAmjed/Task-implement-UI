@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--yellow-->
+    <color name="yellow_600">#F9D100</color>
+
+    <!--yellow-->
+    <color name="red_500">#FF0D0D</color>
+
+    <!--blue -->
+    <color name="blueOpacity87">#DE122940</color>
+    <color name="blueOpacity38">#61122940</color>
+
+    <!--black -->
+    <color name="black">#FF000000</color>
+    <color name="black_50">#F8F8F8</color>
+
+    <!--gray-->
+    <color name="grayOpacity60">#99263238</color>
+
+    <!--white -->
+    <color name="white">#FFFFFFFF</color>
+</resources>

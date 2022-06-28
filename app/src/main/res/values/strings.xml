@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TaskUi</string>
+
+    <string name="nameUser">Ahmed hassan</string>
+    <string name="career">Engineer</string>
+    <string name="location">UK</string>
+    <string name="reviews">(150 Reviews)</string>
+    <string name="rating">5.4</string>
+
+    <string name="hours">3 hr</string>
+    <string name="country">Russian</string>
+    <string name="days_ago">5 Days ago</string>
+</resources>
