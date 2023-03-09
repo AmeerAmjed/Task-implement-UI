@@ -8,23 +8,19 @@
     tools:context=".MainActivity"
     >
 
-    <!--root row-->
     <LinearLayout
         style="@style/cardStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
 
-        <!--Avatar user-->
         <com.google.android.material.imageview.ShapeableImageView
             app:srcCompat="@drawable/avaters"
-            android:layout_width="@dimen/sizeAvatat"
-            android:layout_height="@dimen/sizeAvatat"
+            android:layout_width="@dimen/sizeAvatar"
+            android:layout_height="@dimen/sizeAvatar"
             android:layout_margin="@dimen/spacingMedium"
-            app:shapeAppearanceOverlay="@style/roundedCornersImageView"
-            />
+            app:shapeAppearanceOverlay="@style/roundedCornersImageView" />
 
-        <!--Column one-->
         <LinearLayout
             android:gravity="start"
             android:orientation="vertical"
@@ -33,7 +29,6 @@
             android:layout_height="wrap_content"
             >
 
-            <!--name user-->
             <TextView
                 android:text="@string/nameUser"
                 style="@style/nameUserStyle"
@@ -41,7 +36,6 @@
                 android:layout_height="wrap_content"
                 />
 
-            <!--career user-->
             <TextView
                 android:text="@string/career"
                 style="@style/secTextStyle"
@@ -49,23 +43,21 @@
                 android:layout_height="wrap_content"
                 />
 
-            <!--Row icon Location & Location-->
             <LinearLayout
                 android:gravity="start"
                 android:orientation="horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 >
 
-                <!--icon location-->
                 <ImageView
-                    android:tint="@color/red_500"
-                    android:src="@drawable/ic_baseline_location_on_24"
-                    android:layout_width="@dimen/sizeWidthLocationIcon"
+                    android:layout_width="wrap_content"
+                    android:contentDescription="@string/icon_location"
                     android:layout_height="match_parent"
-                    />
+                    android:src="@drawable/location"
+                    app:tint="@color/red_500" />
 
-                <!--location-->
                 <TextView
                     android:text="@string/location"
                     style="@style/FourTextStyle"
@@ -75,7 +67,6 @@
 
             </LinearLayout>
 
-            <!--row rating and star-->
             <LinearLayout
                 android:gravity="start"
                 android:layout_marginTop="@dimen/spacingSmall"
@@ -84,37 +75,33 @@
                 android:layout_height="wrap_content"
                 >
 
-                <!--reviews-->
                 <TextView
                     android:text="@string/reviews"
-                    style="@style/defualtTextStyle"
+                    style="@style/defaultTextStyle"
                     android:layout_marginEnd="@dimen/spacing"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     />
 
-                <!--rating-->
                 <TextView
                     android:text="@string/rating"
-                    style="@style/defualtTextStylebold"
+                    style="@style/defaultTextStyle.bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     />
 
-                <!--icon star-->
                 <ImageView
-                    android:tint="@color/yellow_600"
-                    android:src="@drawable/ic_baseline_star_24"
+                    android:contentDescription="@string/icon_rating"
                     android:gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    />
+                    android:src="@drawable/star"
+                    app:tint="@color/yellow_600" />
 
             </LinearLayout>
 
         </LinearLayout>
 
-        <!--column two-->
         <LinearLayout
             android:gravity="end"
             android:orientation="vertical"
@@ -124,7 +111,6 @@
             android:layout_height="wrap_content"
             >
 
-            <!--hours-->
             <TextView
                 android:text="@string/hours"
                 style="@style/hoursStyle"
@@ -132,7 +118,6 @@
                 android:layout_height="wrap_content"
                 />
 
-            <!--country-->
             <TextView
                 android:text="@string/country"
                 style="@style/secTextStyle"
@@ -140,7 +125,6 @@
                 android:layout_height="wrap_content"
                 />
 
-            <!--days-->
             <TextView
                 android:text="@string/days_ago"
                 style="@style/thriTextStyle"

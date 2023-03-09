@@ -10,4 +10,6 @@
     <string name="hours">3 hr</string>
     <string name="country">Russian</string>
     <string name="days_ago">5 Days ago</string>
+    <string name="icon_location">icon location</string>
+    <string name="icon_rating">icon rating</string>
 </resources>

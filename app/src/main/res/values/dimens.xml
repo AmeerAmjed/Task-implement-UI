@@ -7,8 +7,9 @@
 
     <dimen name="radiusShapreCard">8dp</dimen>
     <dimen name="radiusShapreHours">50dp</dimen>
-    <dimen name="sizeAvatat">93dp</dimen>
+    <dimen name="sizeAvatar">93dp</dimen>
     <dimen name="sizeWidthLocationIcon">10dp</dimen>
+    <dimen name="sizeHeightLocationIcon">12dp</dimen>
 
     <dimen name="fontSizeCaption">12sp</dimen>
     <dimen name="fontSizeSubtitle1">16sp</dimen>
